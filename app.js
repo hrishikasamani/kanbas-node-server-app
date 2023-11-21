@@ -7,7 +7,7 @@ import cors from "cors";
 import "dotenv/config";
 import session from "express-session";
 const app = express();
-app.use(cors());
+// app.use(cors());
 app.use(express.json());
 
 ModuleRoutes(app);
