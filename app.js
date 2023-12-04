@@ -6,7 +6,9 @@ import CourseRoutes from './courses/routes.js';
 import ModuleRoutes from './module/routes.js';
 import cors from "cors";
 import mongoose from "mongoose";
-mongoose.connect("mongodb://127.0.0.1:27017/kanbas");
+const DB_CONNECTION_STRING="mongodb+srv://hrishikasamani:Hrishika1808@cluster0.wlfbjwj.mongodb.net/kanbas?retryWrites=true&w=majority";
+const CONNECTION_STRING = DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas'
+mongoose.connect(CONNECTION_STRING);
 import UserRoutes from "./users/routes.js";
 import "dotenv/config";
 const app = express();
