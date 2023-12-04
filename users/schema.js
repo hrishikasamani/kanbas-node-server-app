@@ -6,8 +6,6 @@ const userSchema = new mongoose.Schema({
     firstName: String,
     lastName: String,
     email: String,
-    salary: { type: Number, default: 75000},
-    married: { type: Boolean, default: 75000},
     dob: Date,
     doh: { type: Date, default: Date.now},
     role: {
