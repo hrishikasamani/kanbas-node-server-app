@@ -3,6 +3,7 @@ import * as dao from "./dao.js";
 function UserRoutes(app) {
   const createUser = async (req, res) => {
     const user = await dao.createUser(req.body);
+    console.log(user);
     res.json(user);
   };
   const deleteUser = async (req, res) => {
